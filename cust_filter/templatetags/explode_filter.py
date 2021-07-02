@@ -6,3 +6,7 @@ register = template.Library()
 @register.filter
 def explode(value, separator):
     return value.split(separator)
+
+@register.filter
+def capitalize(value):
+    return value.upper()
