@@ -4,4 +4,5 @@ from django.shortcuts import render
 
 def index(request):
     names = 'abiy,demeke,Gedu,Tola'
-    return render(request, 'index.html', {'names':names})
+    titles = 'I wonder the 2020 races for the 1st time'
+    return render(request, 'index.html', {'names':names, 'titles':titles})
